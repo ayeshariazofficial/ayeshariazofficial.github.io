@@ -1,0 +1,229 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Ayesha's graphic design portfolio — selected practice and concept projects in social media, advertising, monogram design and visual storytelling.">
+  <meta name="theme-color" content="#fff8f5">
+  <title>Ayesha — Graphic Design Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="page-loader" id="page-loader" aria-hidden="true">
+    <div class="loader-mark">A</div>
+    <p>assembling lovely ideas…</p>
+  </div>
+  <div class="scroll-progress" id="scroll-progress" aria-hidden="true"></div>
+  <div class="grain" aria-hidden="true"></div>
+
+  <header class="site-header" id="home">
+    <nav class="navbar container" aria-label="Primary navigation">
+      <a class="brand" href="#home" aria-label="Ayesha home">
+        <span class="brand-mark">A</span>
+        <span class="brand-name">Ayesha</span>
+      </a>
+
+      <div class="nav-actions">
+        <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Switch colour mood" title="Switch colour mood">
+          <span class="theme-sun">☼</span><span class="theme-moon">☾</span>
+        </button>
+        <button class="menu-toggle" type="button" aria-label="Open menu" aria-expanded="false">
+          <span></span><span></span>
+        </button>
+      </div>
+
+      <div class="nav-panel">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#process">Process</a>
+        <a href="#work">Work</a>
+        <a href="#contact">Contact</a>
+        <a class="nav-cta" href="#contact">Contact me ♡</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero section-shell">
+      <div class="container hero-grid">
+        <div class="hero-copy reveal">
+          <div class="eyebrow"><span class="pulse"></span><span id="availability">Open to internships and junior creative opportunities</span></div>
+          <p class="kicker" id="role-line">Graphic design learner · visual thinker</p>
+          <h1>Ideas that feel<br><em id="rotating-word">soft.</em><br>Designs that stay.</h1>
+          <p class="hero-text" id="hero-text"></p>
+          <div class="hero-actions">
+            <a class="btn btn-primary magnetic" href="#work">See selected work <span>↗</span></a>
+            <a class="btn btn-ghost magnetic" href="#about">A little about me <span>↓</span></a>
+          </div>
+          <div class="hero-stats" aria-label="Portfolio snapshot">
+            <div><strong id="project-count">0</strong><span>project groups & collections</span></div>
+            <div><strong id="tool-count">0</strong><span>tools in my current workflow</span></div>
+            <div class="text-stat"><strong>Growing</strong><span>growing design portfolio</span></div>
+          </div>
+        </div>
+
+        <div class="hero-art reveal tilt-scene" id="hero-art" aria-label="Interactive editorial showcase of Ayesha's design work">
+          <div class="hero-aura aura-one" aria-hidden="true"></div>
+          <div class="hero-aura aura-two" aria-hidden="true"></div>
+
+          <article class="feature-frame feature-main tilt-layer" data-depth="9">
+            <img src="assets/images/cyber-insta.webp" alt="CyberNexa social media campaign design">
+            <div class="feature-caption"><span>01 · Identity</span><strong>CyberNexa</strong><small>Logo made in Inkscape · campaign layout in Canva</small></div>
+          </article>
+
+          <article class="feature-frame feature-tall tilt-layer" data-depth="16">
+            <img src="assets/images/brew-flyer.webp" alt="Brew and Bloom grand opening poster">
+            <div class="feature-caption compact"><span>02 · Café</span><strong>Brew & Bloom</strong></div>
+          </article>
+
+          <article class="feature-frame feature-small tilt-layer" data-depth="23">
+            <img src="assets/images/amora-collage.webp" alt="Amora beauty promotional design">
+            <div class="feature-caption compact"><span>03 · Beauty</span><strong>Amora</strong></div>
+          </article>
+
+          <article class="feature-frame feature-wide tilt-layer" data-depth="13">
+            <img src="assets/images/sumfect-banner.webp" alt="Sumfect product advertising banner">
+            <div class="feature-caption compact"><span>04 · Commercial</span><strong>Sumfect</strong></div>
+          </article>
+
+          <div class="hero-stamp tilt-layer" data-depth="27" aria-hidden="true"><b>A</b><span>selected<br>work</span></div>
+          <div class="hero-hint">hover the work ✦</div>
+        </div>
+      </div>
+
+      <div class="marquee-wrap" aria-hidden="true">
+        <div class="marquee" id="marquee"></div>
+      </div>
+    </section>
+
+    <section class="about section-shell" id="about">
+      <div class="container about-grid">
+        <div class="section-heading reveal">
+          <span class="section-number">01</span>
+          <p class="kicker">A little about me</p>
+          <h2>Beginner energy, careful details and a real willingness to learn.</h2>
+        </div>
+        <div class="about-copy reveal" id="about-copy"></div>
+        <div class="about-collage reveal" aria-label="Decorative design collage">
+          <div class="polaroid p-one"><img src="assets/images/brew-logo.webp" alt="Brew and Bloom logo"><span>brand identity</span></div>
+          <div class="polaroid p-two"><img src="assets/images/amora-collage.webp" alt="Amora beauty layout"><span>social layouts</span></div>
+          <div class="note-card">I would rather show<br>real growth than fake experience ♡</div>
+          <div class="bow" aria-hidden="true"><span></span><span></span><i></i></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="skills section-shell" id="skills">
+      <div class="container">
+        <div class="section-heading centered reveal">
+          <span class="section-number">02</span>
+          <p class="kicker">Current creative toolkit</p>
+          <h2>What I use now—and what I am still learning.</h2>
+          <p>No made-up percentages. Just a clear view of my present level.</p>
+        </div>
+        <div class="skill-grid" id="skill-grid"></div>
+      </div>
+    </section>
+
+    <section class="interview section-shell">
+      <div class="container interview-card reveal">
+        <div>
+          <span class="section-number">03</span>
+          <p class="kicker">Interview snapshot</p>
+          <h2>What I can confidently talk about.</h2>
+        </div>
+        <div class="interview-list" id="interview-list"></div>
+      </div>
+    </section>
+
+    <section class="process section-shell" id="process">
+      <div class="container">
+        <div class="section-heading centered reveal">
+          <span class="section-number">04</span>
+          <p class="kicker">How I approach a design</p>
+          <h2>A simple process I can explain in an interview.</h2>
+        </div>
+        <div class="process-grid" id="process-grid"></div>
+      </div>
+    </section>
+
+    <section class="work section-shell" id="work">
+      <div class="container">
+        <div class="work-header reveal">
+          <div class="section-heading">
+            <span class="section-number">05</span>
+            <p class="kicker">Selected work</p>
+            <h2>Selected projects grouped into clear case studies.</h2>
+          </div>
+          <p>Related logos, posters, social designs and videos are grouped together so the portfolio stays detailed without becoming difficult to explore.</p>
+        </div>
+        <div class="filter-bar reveal" id="filter-bar" role="group" aria-label="Filter projects"></div>
+        <div class="project-grid" id="project-grid"></div>
+      </div>
+    </section>
+
+    <section class="quote-section section-shell">
+      <div class="container quote-card reveal">
+        <span class="quote-star">✦</span>
+        <p>“Not pretending to know everything—just showing that I care enough to keep learning.”</p>
+        <span class="quote-sign">— Ayesha ♡</span>
+      </div>
+    </section>
+
+    <section class="contact section-shell" id="contact">
+      <div class="container contact-card reveal">
+        <div>
+          <p class="kicker">Let’s talk</p>
+          <h2>Open to a conversation, an interview or a learning opportunity.</h2>
+          <p id="contact-note"></p>
+        </div>
+        <div class="contact-actions">
+          <a class="btn btn-primary magnetic" id="email-link" href="mailto:ayeshariaz563@gmail.com">Email Ayesha <span>↗</span></a>
+          <button class="btn btn-ghost magnetic" id="copy-email" type="button">Copy email <span>⧉</span></button>
+        </div>
+        <div class="contact-email"><span>Email</span><a id="email-text" href="mailto:ayeshariaz563@gmail.com">ayeshariaz563@gmail.com</a></div>
+        <div class="social-area">
+          <div class="social-heading"><span>Social profiles</span><small>Links can be activated later without redesigning this section.</small></div>
+          <div class="social-links" id="social-links"></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <a class="brand" href="#home"><span class="brand-mark">A</span><span>Ayesha</span></a>
+      <p>Designed as a growing portfolio—with curiosity, honesty and a little bit of colour ♡</p>
+      <span>© <span id="year"></span> Ayesha</span>
+    </div>
+  </footer>
+
+  <dialog class="project-modal" id="project-modal">
+    <button class="modal-close" type="button" aria-label="Close project">×</button>
+    <div class="modal-media">
+      <div class="modal-stage" id="modal-stage" aria-live="polite"></div>
+      <div class="modal-thumbs" id="modal-thumbs" aria-label="Project media"></div>
+    </div>
+    <div class="modal-content">
+      <p class="kicker" id="modal-category"></p>
+      <h2 id="modal-title"></h2>
+      <p id="modal-description"></p>
+      <div class="modal-details">
+        <div><span>My role</span><strong id="modal-role"></strong></div>
+        <div><span>Tools</span><strong id="modal-tools"></strong></div>
+        <div><span>Project type</span><strong id="modal-type"></strong></div>
+      </div>
+      <div class="palette" id="modal-palette" aria-label="Project colour palette"></div>
+      <div class="modal-learning"><span>What I practised</span><p id="modal-learning"></p></div>
+    </div>
+  </dialog>
+
+  <div class="toast" id="toast" role="status" aria-live="polite">Email copied ✓</div>
+  <noscript><p class="noscript">Please enable JavaScript to view the interactive portfolio.</p></noscript>
+  <script src="content.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
