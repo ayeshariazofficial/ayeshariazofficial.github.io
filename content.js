@@ -1,10 +1,11 @@
 /* =========================================================
    AYESHA PORTFOLIO — EDIT TEXT AND PROJECTS HERE
    =========================================================
-   - Static designs live in: assets/images/
-   - Videos live in: assets/videos/
-   - Video thumbnails live in: assets/posters/
-   - Project cover collages live in: assets/covers/
+   - Static designs: assets/images/
+   - Videos: assets/videos/
+   - Video thumbnails: assets/posters/
+   - Project cover collages: assets/covers/
+   - Decorative illustration: assets/illustrations/
 
    Add or remove a complete project object below. The cards,
    filters and project count update automatically.
@@ -13,68 +14,146 @@
 window.PORTFOLIO = {
   profile: {
     name: "Ayesha",
+    fullName: "Ayesha Riaz",
     email: "ayeshariaz563@gmail.com",
-    availability: "Open to internships and junior creative opportunities",
-    roleLine: "Graphic design learner · visual storyteller",
-    heroText: "I’m Ayesha, a beginner graphic designer creating brand visuals, promotional layouts and short motion pieces. I mainly use Canva, use Inkscape for beginner vector-logo construction, and use CapCut for basic editing.",
+    location: "Bahawalpur, Pakistan",
+    availability: "Open to internships, junior roles and creative opportunities",
+    roleLine: "Graphic Designer & Creative Visual Creator",
+    heroText: "I’m Ayesha Riaz, a graphic designer and creative visual creator based in Bahawalpur, Pakistan. I create branding, social media visuals, promotional designs and motion content—with additional strengths in content writing, data entry and digital storytelling.",
     about: [
-      "I enjoy turning a simple idea into a clearer visual through colour, typography, spacing and hierarchy.",
-      "My portfolio includes logo and branding practice, café and product advertisements, beauty and fashion layouts, social media designs and short animated studies.",
-      "The work shown here is my own portfolio and practice work. I have grouped related pieces into small case studies so an interviewer can see both variety and how I keep a visual direction consistent."
+      "I enjoy shaping visual ideas that are attractive, easy to understand and consistent. My work includes branding, logo studies, social media campaigns, promotional layouts and short motion pieces.",
+      "Beyond design, I write content, edit videos, organise data and create AI-assisted videos for YouTube content concepts. I have also built a TikTok audience of nearly 70K followers through engaging short-form content.",
+      "I am completing a BS in Computer Science at The Islamia University of Bahawalpur. My technical background supports the way I approach digital tools, structure and problem-solving, while this portfolio presents the creative side of my work."
     ],
-    contactNote: "For an internship, junior design role or interview, you can contact me directly by email.",
+    education: [
+      {
+        qualification: "BS Computer Science",
+        institute: "The Islamia University of Bahawalpur (IUB)",
+        detail: "Department of Computer Science",
+        years: "2022–2026"
+      },
+      {
+        qualification: "FSc Pre-Medical",
+        institute: "Leaders College, Bahawalpur",
+        detail: "Intermediate education",
+        years: "2020–2022"
+      }
+    ],
+    contactNote: "For an internship, junior creative role, collaboration or interview, you can contact me by email. Social links can be activated whenever the profiles are ready.",
     socials: [
-      { name: "LinkedIn", short: "in", url: "", note: "Add later" },
-      { name: "Facebook", short: "f", url: "", note: "Add later" },
-      { name: "Instagram", short: "ig", url: "", note: "Add later" }
+      { name: "LinkedIn", short: "in", url: "", note: "Coming soon" },
+      { name: "Facebook", short: "f", url: "", note: "Coming soon" },
+      { name: "Instagram", short: "ig", url: "", note: "Coming soon" }
     ]
   },
 
-  rotatingWords: ["clear.", "playful.", "polished.", "memorable."],
+  rotatingWords: ["beautiful.", "thoughtful.", "clear.", "memorable."],
 
   marqueeItems: [
-    "Branding", "Social Media", "Advertising", "Logo Practice", "Canva", "Motion Design", "CapCut", "Inkscape"
+    "Branding", "Social Media Design", "Logo Design", "Video Editing", "Content Writing", "AI Video Creation", "Data Entry", "Short-form Content"
   ],
 
   tools: [
     {
       name: "Canva",
-      level: "Regularly use",
-      description: "Brand visuals, posters, social posts, promotional layouts, presentations and simple animated designs.",
+      level: "Confident workflow",
+      description: "Brand visuals, social posts, presentations, promotional layouts and animated design content.",
       symbol: "C"
     },
     {
-      name: "CapCut",
-      level: "Basic editing",
-      description: "Short-form edits, text timing, transitions, music timing and simple portfolio videos.",
-      symbol: "▶"
-    },
-    {
       name: "Inkscape",
-      level: "Beginner · used in 2 logos",
-      description: "Used for the CyberNexa and Sumfect logo construction while learning vector paths, node editing, alignment and shape building.",
+      level: "Beginner vector design",
+      description: "Used to construct the CyberNexa and Sumfect logos while practising paths, nodes, alignment and shapes.",
       symbol: "I"
     },
     {
-      name: "Typography & Layout",
+      name: "Video Editing",
+      level: "Creative editing",
+      description: "Short-form videos, transitions, text timing, music timing and polished visual sequences using CapCut and Canva.",
+      symbol: "▶"
+    },
+    {
+      name: "AI Video Creation",
       level: "Developing",
-      description: "Practising hierarchy, alignment, spacing, font pairing, contrast and readable compositions.",
+      description: "Create AI-assisted videos for YouTube content concepts and experiment with visual storytelling workflows.",
+      symbol: "AI"
+    },
+    {
+      name: "Branding & Logo Design",
+      level: "Developing",
+      description: "Logo concepts, visual directions, colour palettes and coordinated campaign layouts.",
+      symbol: "✦"
+    },
+    {
+      name: "Social Media Design",
+      level: "Regularly create",
+      description: "Platform-friendly promotional posts, offer layouts, campaign visuals and short-form content graphics.",
+      symbol: "#"
+    },
+    {
+      name: "Content Writing",
+      level: "Comfortable",
+      description: "Clear captions, promotional copy and simple written content shaped around the audience and purpose.",
       symbol: "Aa"
+    },
+    {
+      name: "Data Entry",
+      level: "Accurate & organised",
+      description: "Structured data handling with attention to accuracy, consistency and clean organisation.",
+      symbol: "⌨"
     }
   ],
 
-  interviewPoints: [
-    "How I choose a visual direction, colour palette and font pairing for a project.",
-    "How I adapt one identity across a logo, social post, flyer or banner.",
-    "How I use spacing, alignment and hierarchy to make a busy layout easier to read.",
-    "How I created the CyberNexa and Sumfect logos in Inkscape, and what I am still learning in vector design."
+  digitalHighlights: [
+    {
+      stat: "Nearly 70K",
+      title: "Short-form audience growth",
+      text: "Built a TikTok audience of nearly 70K followers through engaging short-form content—without displaying the account in this portfolio.",
+      icon: "↗"
+    },
+    {
+      stat: "YouTube",
+      title: "AI-assisted video concepts",
+      text: "Create AI-assisted videos for YouTube content concepts and continue exploring better visual storytelling methods.",
+      icon: "▶"
+    },
+    {
+      stat: "Words",
+      title: "Content writing",
+      text: "Write clear, audience-aware captions and promotional content that supports the visual rather than competing with it.",
+      icon: "✎"
+    },
+    {
+      stat: "Detail",
+      title: "Data entry & organisation",
+      text: "Work carefully with structured information, consistency and accuracy—useful for both creative and administrative tasks.",
+      icon: "✓"
+    }
   ],
 
   process: [
-    { number: "01", title: "Understand", text: "Identify the purpose, audience, format and most important message." },
-    { number: "02", title: "Collect", text: "Gather references and choose the mood, colours, imagery and type direction." },
-    { number: "03", title: "Build", text: "Create the first layout, test hierarchy and arrange the main visual elements." },
-    { number: "04", title: "Refine", text: "Check spacing, consistency, readability and small details before presenting it." }
+    { number: "01", title: "Understand", text: "Clarify the purpose, audience, format and most important message." },
+    { number: "02", title: "Explore", text: "Collect references and select the mood, colours, imagery and type direction." },
+    { number: "03", title: "Create", text: "Build the visual hierarchy, test the composition and develop the main design." },
+    { number: "04", title: "Refine", text: "Improve spacing, readability and consistency before presenting the final work." }
+  ],
+
+  whyChooseMe: [
+    {
+      title: "Visual thinking with content sense",
+      text: "I consider both how a design looks and what it needs to communicate, so the message remains clear and purposeful.",
+      icon: "01"
+    },
+    {
+      title: "Audience awareness",
+      text: "Growing a short-form audience to nearly 70K has helped me understand attention, clarity and what encourages people to stop and engage.",
+      icon: "02"
+    },
+    {
+      title: "Organised, adaptable and open to feedback",
+      text: "I bring design, writing, video and data skills together—and I am comfortable learning, revising and improving the work.",
+      icon: "03"
+    }
   ],
 
   projects: [

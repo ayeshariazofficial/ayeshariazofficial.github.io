@@ -23,7 +23,8 @@ function setProfileContent() {
   $('#email-text').href = `mailto:${DATA.profile.email}`;
   $('#email-text').textContent = DATA.profile.email;
   $('#project-count').textContent = DATA.projects.length;
-  $('#tool-count').textContent = DATA.tools.length;
+  const location = $('#location-text');
+  if (location) location.textContent = DATA.profile.location;
 }
 
 
@@ -64,9 +65,41 @@ function renderTools() {
   `).join('');
 }
 
-function renderInterviewPoints() {
-  $('#interview-list').innerHTML = DATA.interviewPoints.map((point, index) => `
-    <div class="interview-point reveal"><span>0${index + 1}</span><p>${point}</p></div>
+function renderEducation() {
+  const target = $('#education-list');
+  if (!target) return;
+  target.innerHTML = (DATA.profile.education || []).map(item => `
+    <article class="education-item">
+      <span>${item.years}</span>
+      <h3>${item.qualification}</h3>
+      <p>${item.institute}</p>
+      <small>${item.detail}</small>
+    </article>
+  `).join('');
+}
+
+function renderDigitalHighlights() {
+  const target = $('#highlight-grid');
+  if (!target) return;
+  target.innerHTML = (DATA.digitalHighlights || []).map((item, index) => `
+    <article class="highlight-card reveal" style="--delay:${index * 70}ms">
+      <div class="highlight-icon">${item.icon}</div>
+      <strong>${item.stat}</strong>
+      <h3>${item.title}</h3>
+      <p>${item.text}</p>
+    </article>
+  `).join('');
+}
+
+function renderWhyChooseMe() {
+  const target = $('#why-grid');
+  if (!target) return;
+  target.innerHTML = (DATA.whyChooseMe || []).map((item, index) => `
+    <article class="why-card reveal" style="--delay:${index * 75}ms">
+      <span>${item.icon}</span>
+      <h3>${item.title}</h3>
+      <p>${item.text}</p>
+    </article>
   `).join('');
 }
 
@@ -265,8 +298,8 @@ function initialiseTilt() {
     const y = (event.clientY - box.top) / box.height - 0.5;
     layers.forEach(layer => {
       const depth = Number(layer.dataset.depth || 12);
-      layer.style.setProperty('--mx', `${x * depth}px`);
-      layer.style.setProperty('--my', `${y * depth}px`);
+      layer.style.setProperty('--mx', `${x * depth * 0.58}px`);
+      layer.style.setProperty('--my', `${y * depth * 0.58}px`);
     });
   });
   scene.addEventListener('mouseleave', () => layers.forEach(layer => {
@@ -342,7 +375,9 @@ function start() {
   setProfileContent();
   renderMarquee();
   renderTools();
-  renderInterviewPoints();
+  renderEducation();
+  renderDigitalHighlights();
+  renderWhyChooseMe();
   renderProcess();
   renderProjects();
   renderSocialLinks();
